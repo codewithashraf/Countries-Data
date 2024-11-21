@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: #202D36;
+  color: white;
+}
+
+/* header content styling code */
+
+header{
+  width: 100%;
+  height: 10%;
+  background-color: #2B3743;
+  color: inherit;
+  padding: 1vw 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+  position: relative;
+  z-index: 11;
+}
+header div{
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  cursor: pointer;
+}
+header div i{
+  font-size: 3vmin;
+}
+header h2{
+  font-size: 4vmin;
+}
+header div h4{
+  font-size: 2.5vmin;
+}
+
+/* main content styling */
+
+main{
+  width: 100%;
+  height: 80%;
+  padding: 6vmin 0vmin 6vmin 11vmin;
+}
+#back-btn{
+  width: 16vmin;
+  height: 8vmin;
+  background-color: transparent;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 3vmin;
+  font-weight: bold;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#country-detail-card{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#left-part{
+  width: 40%;
+  height: 100%;
+  padding: 6vmin 2vmin;
+  display: flex;
+  align-items: center;
+}
+#left-part img{
+  width: 100%;
+  height: 250px;
+}
+#right-part{
+  width: 60%;
+  height: 100%;
+  padding: 6vmin;
+  padding-right: 0;
+  padding-right: 0;
+  padding-top: 10vmin;
+  display: flex;
+  flex-direction: column;
+}
+#right-part #heading{
+  width: 100%;
+  height: 20%;
+  font-size: 3vmin;
+  padding: 1vmin 0;
+}
+#right-part #center{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  gap: 10vw;
+}
+#center-left{
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5vmin;
+  gap: 1.5vmin;
+}
+#center-right{
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5vmin;
+  gap: 1.5vmin;
+}
+#bottom{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 2.5vmin;
+  gap: 2vmin;
+}
+#bottom a{
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  padding: .5vmin 3vmin;
+  font-size: 2.5vmin;
+  border: none;
+  border-radius: .5vmin;
+  box-shadow:
+  0 10px 10px hsl(0deg 0% 0% / 0.3),
+  0 2px 2px hsl(0deg 0% 0% / 0.3),
+  0 4px 4px hsl(0deg 0% 0% / 0.3),
+  0 8px 8px hsl(0deg 0% 0% / 0.3),
+  0 16px 16px hsl(0deg 0% 0% / 0.3)
+;
+}
+.change #bottom a{
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  padding: .5vmin 3vmin;
+  font-size: 2.5vmin;
+  border: none;
+  border-radius: .5vmin;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media (max-width: 1024px) {
+  main{
+    width: 100%;
+    height: 80%;
+    padding: 6vmin 0vmin 6vmin 4vmin;
+  }
+  #country-detail-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vmin;
+  }
+  #left-part{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  #left-part img{
+    width: 100%;
+    max-width: 400px;
+  }
+  #right-part{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    display: flex;
+    gap: 4vmin;
+    padding: 2vmin;
+  }
+  #heading{
+    max-width: fit-content;
+  }
+  #center{
+    max-width: fit-content;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  main{
+    padding: 15px;
+    overflow-x: hidden;
+    width: 100%;
+    height: fit-content;
+  }
+  #left-part img{
+    width: 100%;
+    max-width: 350px;
+    justify-content: flex-start;
+  }
+  #country-detail-card{
+    padding: 40px 10px 0px 10px;
+  }
+  #right-part{
+    gap: 12px;
+    font-size: 50px;
+    align-items: flex-start;
+  }
+  #heading h2{
+    font-size: 25px;
+  }
+  #right-part #center{
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+  #center-left{
+    font-size: 1rem;
+    padding-left: 0;
+    width: 100%;
+  }
+  #center-right{
+    font-size: 1rem;
+    width: 100%;
+  }
+  #bottom{
+    font-size: 1rem;
+    width: 110%;
+    height: fit-content;
+    display: flex;
+    margin-top: 10px;
+  }
+  #bottom a{
+   font-size: 14px;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Data</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="country.css" />
+    <script src="country.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h2>Where in the world?</h2>
+      <div id="dark-theme">
+        <i class="fa-regular fa-moon"></i>
+        <h4>Dard Mode</h4>
+      </div>
+    </header>
+    <main>
+      <div id="back">
+        <button id="back-btn"><i class="fa-solid fa-arrow-left-long"></i><span>Back</span></button>
+      </div>
+       <div id="country-detail-card">
+       <div id="left-part">
+          <img id="flag" src="" alt="">
+        </div>
+        <div id="right-part">
+          <div id="heading">
+            <h2 id="country-name">Country Name</h2>
+          </div>
+          <div id="center">
+            <div id="center-left">
+              <p><b>Native Name:</b> <span id="native-name"></span></p>
+              <p><b>Region:</b> <span id="region"></span></p>
+              <p><b>Population:</b> <span id="population"></span></p>
+              <p><b>Sub Region:</b> <span id="sub-region"></span></p>
+              <p><b>Capital:</b> <span id="capital"></span></p>
+            </div>
+            <div id="center-right">
+              <p><b>Top Level Domain: <span id="TLD"></span></b></p>
+              <p><b>Currencies:</b> <span id="currencies"></span></p>
+              <p><b>Languages:</b> <span id="languages"></span></p>
+            </div>
+          </div>
+          <div id="bottom">
+            <p><b>Border Countries:</b></p>
+            <!-- <a href="">Franseis</a>
+            <a href="">Name</a>
+            <a href="">Name</a> -->
+          </div>
+        </div> 
+      </div>
+    </div>
+    </main>
+  </body>
+</html>
